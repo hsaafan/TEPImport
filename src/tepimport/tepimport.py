@@ -71,7 +71,7 @@ def import_sets(sets_to_import: tuple = range(22),
     """
 
     if isinstance(sets_to_import, int):
-        sets_to_import = (sets_to_import)
+        sets_to_import = tuple([sets_to_import])
     if not hasattr(type(sets_to_import), '__iter__'):
         raise TypeError("Expected an iterable object")
 
