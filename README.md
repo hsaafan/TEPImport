@@ -2,7 +2,16 @@
 
 Utility for quickly downloading and loading the Tennessee Eastman Process data set.
 
+## Small Data Set
+
 The data set is downloaded from the University of Illinois Large Scale Systems Research Laboratory. A copy of the license is included in the zip package downloaded from the site in the file `readme.txt`.
+
+## Large Data Set
+
+The data set is downloaded from the Harvard Dataverse site. By downloading this data, you are agreeing to the terms set out in the Harvard Dataverse site.
+
+The terms can be found in the following link.
+https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/6C3JR1
 
 ## Quickstart
 

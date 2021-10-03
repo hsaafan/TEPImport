@@ -7,7 +7,7 @@ _folder_path = os.path.abspath("./TE_process/")
 """Setup names of data sets"""
 _training_sets = []
 _test_sets = []
-for i in range(22):
+for i in range(21):
     _training_sets.append("d" + str(i).zfill(2) + ".dat")
     _test_sets.append("d" + str(i).zfill(2) + "_te.dat")
 
@@ -28,7 +28,12 @@ def data_exists_check() -> None:
                        f"would you like to dowload the data sets and extract "
                        f"to this folder? [y, n] ").lower()
     if choice == 'y':
-        download.main()
+        choice = input(f"Would you like to use the large dataset? Answering "
+                       f"no will use the smaller one instead [y/n]").lower()
+        if choice == 'y':
+            download.main(large_dataset=True, verbose=True)
+        else:
+            download.main(verbose=True)
 
 
 def set_folder_path(path: str) -> None:
